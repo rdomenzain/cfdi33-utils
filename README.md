@@ -17,8 +17,7 @@ Use [composer](https://getcomposer.org/), so please run
 ```shell
 composer require rdomenzain/cfdi33-utils
 ```
-
-## Basic usage as a PHP library
+## How create XML CFDI 3.3 
 
 ```php
 <?php
