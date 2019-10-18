@@ -3,8 +3,8 @@
 [![Source Code][badge-source]][source]
 [![Software License][badge-license]][license]
 [![Total Downloads][badge-downloads]][downloads]
-[![GIT][badge-git]][git]
 [![Pagina Web][badge-pagina]][pagina]
+[![GIT][badge-git]][git]
 
 > Utilerias para la todo lo relacionado a la generacion del CFDI 3.3 del SAT México.
 
