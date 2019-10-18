@@ -3,6 +3,8 @@
 [![Source Code][badge-source]][source]
 [![Software License][badge-license]][license]
 [![Total Downloads][badge-downloads]][downloads]
+[![GIT][badge-git]][git]
+[![Pagina Web][badge-pagina]][pagina]
 
 > Utilerias para la todo lo relacionado a la generacion del CFDI 3.3 del SAT México.
 
@@ -47,7 +49,10 @@ and licensed for use under the MIT License (MIT). Please see [LICENSE][] for mor
 [source]: https://github.com/rdomenzain/cfdi33-utils
 [license]: https://github.com/rdomenzain/cfdi33-utils/blob/master/LICENSE
 [downloads]: https://packagist.org/packages/rdomenzain/cfdi33-utils
+[git]: https://packagist.org/packages/rdomenzain
+[pagina]: https://ddsis.com.mx
 
-[badge-source]: https://img.shields.io/badge/source-rdomenzain/cfdi33-utils-blue?style=flat-square
-[badge-license]: https://img.shields.io/badge/licence-MIT-red
-[badge-downloads]: https://img.shields.io/badge/downloads-%3E%20999-orange
+[badge-source]: https://img.shields.io/badge/source-cfdi33--utils-blue?style=flat-square
+[badge-license]: https://img.shields.io/badge/licence-MIT-red?style=flat-square
+[badge-downloads]: https://img.shields.io/badge/downloads-%3E%20999-orange?style=flat-square[badge-git]: https://img.shields.io/github/followers/rdomenzain?label=rdomenzain&style=social
+[badge-pagina]: https://img.shields.io/badge/Web-DDsis-lightgrey
