@@ -54,5 +54,6 @@ and licensed for use under the MIT License (MIT). Please see [LICENSE][] for mor
 
 [badge-source]: https://img.shields.io/badge/source-cfdi33--utils-blue?style=flat-square
 [badge-license]: https://img.shields.io/badge/licence-MIT-red?style=flat-square
-[badge-downloads]: https://img.shields.io/badge/downloads-%3E%20999-orange?style=flat-square[badge-git]: https://img.shields.io/github/followers/rdomenzain?label=rdomenzain&style=social
+[badge-downloads]: https://img.shields.io/badge/downloads-%3E%20999-orange?style=flat-squar
+[badge-git]: https://img.shields.io/github/followers/rdomenzain?label=rdomenzain&style=social
 [badge-pagina]: https://img.shields.io/badge/Web-DDsis-lightgrey
