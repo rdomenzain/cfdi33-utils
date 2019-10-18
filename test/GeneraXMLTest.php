@@ -52,10 +52,10 @@ $comprobante->TipoCambio = "1";
 $comprobante->Total= "1.16";
 $comprobante->TipoDeComprobante = "I";
 $comprobante->MetodoPago = "PUE";
-$comprobante->LugarExpedicion = "31104";
+$comprobante->LugarExpedicion = "11410";
 $emisor = new Emisor();
-$emisor->Rfc = "....";
-$emisor->Nombre = "...";
+$emisor->Rfc = "*************";
+$emisor->Nombre = "***** ***** *****";
 $emisor->RegimenFiscal = "608";
 $comprobante->Emisor = $emisor;
 $receptor = new Receptor();
@@ -226,7 +226,7 @@ $comprobante->Complemento = $complemento;
 $utlXml = new XmlUtils();
 $utlCert = new CertificadoUtils();
 
-$clave = "...";
+$clave = "*****";
 $rutaCert = "C:\\....cer";
 $rutaKey = "C:\\....key";
 

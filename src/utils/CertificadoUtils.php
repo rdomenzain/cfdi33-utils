@@ -16,9 +16,8 @@ class CertificadoUtils
      */
     public function GeneraCertificado2Pem($fileCertContent)
     {
-        $datos = $this->convertCertToPem($fileCertContent);
-        $data = openssl_x509_parse($datos, true);
-        return $this->ConvertNoSerie($data['serialNumber']);
+        $certificado = str_replace(array('\n', '\r'), '', base64_encode($fileCertContent));
+        return $certificado;
     }
 
     public function GetNumCertificado($fileCertContent)
