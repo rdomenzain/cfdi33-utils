@@ -23,8 +23,22 @@ composer require rdomenzain/cfdi33-utils
 ```php
 <?php
 
-// create the invoice as output.pdf
-$converter->createPdfAs($cfdiData, 'output.pdf');
+// create XML...
+$comprobante = new Comprobante();
+$comprobante->Serie = "0A";
+$comprobante->Folio = "11";
+$comprobante->FormaPago = "03";
+$comprobante->...
+
+$emisor = new Emisor();
+$emisor->Rfc = "XAXX010101000";
+$emisor->Nombre = "Publico General";
+$emisor->RegimenFiscal = "608";
+$comprobante->Emisor = $emisor;
+
+$cfdi = new Cfdv33($comprobante, $rutaCert, $rutaKey);
+echo $cfdi->getXml();
+
 ```
 
 ## PHP Support
