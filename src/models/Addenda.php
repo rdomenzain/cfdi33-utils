@@ -2,4 +2,5 @@
 
 namespace rdomenzain\cfdi\utils\models;
 
-class Addenda {}
+class Addenda
+{ }

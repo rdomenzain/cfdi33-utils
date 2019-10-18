@@ -2,9 +2,9 @@
 
 namespace rdomenzain\cfdi\utils\models\Impuestos;
 
-class ImpRetencion {
-    
+class ImpRetencion
+{
+
     public $Impuesto;
     public $Importe;
-
 }

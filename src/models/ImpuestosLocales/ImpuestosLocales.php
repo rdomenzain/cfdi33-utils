@@ -2,7 +2,8 @@
 
 namespace rdomenzain\cfdi\utils\models\ImpuestosLocales;
 
-class ImpuestosLocales {
+class ImpuestosLocales
+{
 
     public $version;
     public $TotaldeRetenciones;
@@ -11,5 +12,4 @@ class ImpuestosLocales {
     public $RetencionesLocales;
     /* @var $TrasladosLocales TrasladosLocales */
     public $TrasladosLocales;
-
 }

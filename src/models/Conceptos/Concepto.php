@@ -1,6 +1,9 @@
 <?php
 
-class Concepto {
+namespace rdomenzain\cfdi\utils\models\Conceptos;
+
+class Concepto
+{
 
     public $ClaveProdServ;
     public $NoIdentificacion;
@@ -11,15 +14,14 @@ class Concepto {
     public $ValorUnitario;
     public $Importe;
     public $Descuento;
-     /* @var $Impuestos Impuestos */
+    /* @var $Impuestos Impuestos */
     public $Impuestos;
-     /* @var $InformacionAduanera InformacionAduanera */
+    /* @var $InformacionAduanera InformacionAduanera */
     public $InformacionAduanera;
-     /* @var $CuentaPredial CuentaPredial */
+    /* @var $CuentaPredial CuentaPredial */
     public $CuentaPredial;
-     /* @var $ComplementoConcepto ComplementoConcepto */
+    /* @var $ComplementoConcepto ComplementoConcepto */
     public $ComplementoConcepto;
-     /* @var $Parte Parte */
+    /* @var $Parte Parte */
     public $Parte;
-
 }

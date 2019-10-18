@@ -2,8 +2,8 @@
 
 namespace rdomenzain\cfdi\utils\models;
 
-class CfdiRelacionado {
+class CfdiRelacionado
+{
 
     public $UUID;
-
 }

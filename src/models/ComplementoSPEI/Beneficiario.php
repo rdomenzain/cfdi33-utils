@@ -2,8 +2,9 @@
 
 namespace rdomenzain\cfdi\utils\models\ComplementoSPEI;
 
-class Beneficiario {
-    
+class Beneficiario
+{
+
     public $BancoReceptor;
     public $Nombre;
     public $TipoCuenta;
@@ -12,6 +13,4 @@ class Beneficiario {
     public $Concepto;
     public $IVA;
     public $MontoPago;
-    
-    
 }

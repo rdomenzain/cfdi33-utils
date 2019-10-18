@@ -2,8 +2,8 @@
 
 namespace rdomenzain\cfdi\utils\models\Conceptos;
 
-class Retenciones {
+class Retenciones
+{
 
     public $Retencion;
-
 }

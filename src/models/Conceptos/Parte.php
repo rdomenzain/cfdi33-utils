@@ -2,7 +2,8 @@
 
 namespace rdomenzain\cfdi\utils\models\Conceptos;
 
-class Parte {
+class Parte
+{
 
     public $ClaveProdServ;
     public $NoIdentificacion;
@@ -13,5 +14,4 @@ class Parte {
     public $Importe;
     /* @var $InformacionAduanera InformacionAduanera */
     public $InformacionAduanera;
-
 }

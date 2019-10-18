@@ -2,8 +2,9 @@
 
 namespace rdomenzain\cfdi\utils\models\ecc11;
 
-class EstadoDeCuentaCombustible {
-    
+class EstadoDeCuentaCombustible
+{
+
     public $Version;
     public $TipoOperacion;
     public $NumeroDeCuenta;

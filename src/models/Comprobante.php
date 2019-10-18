@@ -2,7 +2,8 @@
 
 namespace rdomenzain\cfdi\utils\models;
 
-class Comprobante {
+class Comprobante
+{
 
     public $Version;
     public $Serie;

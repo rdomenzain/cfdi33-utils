@@ -2,7 +2,7 @@
 
 - [x] Create XSD and XSD
 - [x] Modelos del CFDI
-- [ ] Utilerias con SHL
-- [ ] Generacion de XML
-- [ ] Sellado XML
-- [ ] Utilerias
+- [x] Utilerias con SHL
+- [x] Generacion de XML
+- [x] Sellado XML
+- [x] Utilerias

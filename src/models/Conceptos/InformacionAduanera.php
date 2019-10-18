@@ -2,6 +2,7 @@
 
 namespace rdomenzain\cfdi\utils\models\Conceptos;
 
-class InformacionAduanera {
+class InformacionAduanera
+{
     public $NumeroPedimento;
 }

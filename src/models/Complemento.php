@@ -2,7 +2,8 @@
 
 namespace rdomenzain\cfdi\utils\models;
 
-class Complemento {
+class Complemento
+{
 
     /* @var $EstadoDeCuentaCombustible EstadoDeCuentaCombustible */
     public $EstadoDeCuentaCombustible;

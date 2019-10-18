@@ -2,9 +2,9 @@
 
 namespace rdomenzain\cfdi\utils\models\ecc11;
 
-class TrasladosECC {
+class TrasladosECC
+{
 
     /* @var $TrasladoECC TrasladoECC */
     public $TrasladoECC;
-
 }

@@ -15,5 +15,8 @@
         "source": "https://github.com/rdomenzain/cfdi33-utils",
         "issues": "https://github.com/rdomenzain/cfdi33-utils/issues"
     },
-    "require": { }
+    "require": { },
+    "autoload": {
+        "cfdi33-utils": { "rdomenzain\\cfdi\\utils\\": ["src/", "lib/"] }
+    }
 }

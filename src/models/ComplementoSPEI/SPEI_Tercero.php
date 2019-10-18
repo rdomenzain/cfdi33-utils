@@ -2,8 +2,9 @@
 
 namespace rdomenzain\cfdi\utils\models\ComplementoSPEI;
 
-class SPEI_Tercero {
-    
+class SPEI_Tercero
+{
+
     public $FechaOperacion;
     public $Hora;
     public $ClaveSPEI;
@@ -14,5 +15,4 @@ class SPEI_Tercero {
     public $Ordenante;
     /* @var $Beneficiario Beneficiario */
     public $Beneficiario;
-    
 }

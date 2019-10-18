@@ -2,7 +2,8 @@
 
 namespace rdomenzain\cfdi\utils\models\Impuestos;
 
-class ImpImpuestos {
+class ImpImpuestos
+{
 
     /* @var $Retenciones ImpRetenciones */
     public $Retenciones;
@@ -10,5 +11,4 @@ class ImpImpuestos {
     public $Traslados;
     public $TotalImpuestosRetenidos;
     public $TotalImpuestosTrasladados;
-
 }

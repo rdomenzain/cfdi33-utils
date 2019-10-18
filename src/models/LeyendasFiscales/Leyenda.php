@@ -2,10 +2,10 @@
 
 namespace rdomenzain\cfdi\utils\models\LeyendasFiscales;
 
-class Leyenda {
+class Leyenda
+{
 
     public $disposicionFiscal;
     public $norma;
     public $textoLeyenda;
-
 }

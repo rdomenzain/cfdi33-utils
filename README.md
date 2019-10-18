@@ -1,6 +1,7 @@
 # rdomenzain/cfdi33-utils
 
 [![Source Code][badge-source]][source]
+[![Issues][badge-issues]][issues]
 [![Software License][badge-license]][license]
 [![Total Downloads][badge-downloads]][downloads]
 [![Pagina Web][badge-pagina]][pagina]
@@ -36,7 +37,65 @@ $emisor->RegimenFiscal = "608";
 $comprobante->Emisor = $emisor;
 
 $cfdi = new Cfdv33($comprobante, $rutaCert, $rutaKey);
+// This XML is already signed by the certificate and primary key
+// Is ready to send to the favorite PAC
 echo $cfdi->getXml();
+
+```
+## How signed only the XML
+```php
+<?php
+// Declare utils
+$utlXml = new XmlUtils();
+
+// Get original string from the XML
+$cadenaOriginal = $utlXml->GeneraCadenaOriginal(file_get_contents($pathXml));
+
+// generated sign from original string, this add to the XML
+$sello = $this->utlXml->GeneralSelloCfdi33($cadenaOriginal, file_get_contents($rutaKey), $claveKey);
+
+```
+
+## How get certificate and certificate number
+```php
+<?php
+// Certificate utilities declared
+$utlCert = new CertificadoUtils();
+
+// Get the bash from to certificate, this add to the XML
+$certificado = $utlCert->GeneraCertificado2Pem(file_get_contents($rutaCert));
+
+// Get the certificate number from file .cer, this add to the XML
+$noCertificado = $utlCert->GetNumCertificado(file_get_contents($rutaCert));
+
+```
+
+## Otras utilidades sobre CFDI 33
+```php
+<?php
+// Certificate utilities declared
+$utlCert = new CertificadoUtils();
+$utlCommons = new CommonsUtils();
+
+// Get date format requiered for the XML
+echo $utlCommons->GetFechaActualCFDI();
+// Out: 2019-10-18T13:21:36
+
+// Replace characters especial
+echo $utlCommons->ReplaceEncodeUtf8('Asociados&Otros');
+// Out: Asociados&amp;Otros
+
+// Formato to numbers
+echo $utlCommons->FormatNumber(100, 2)
+// Out: 100.00
+
+// Validate certificate
+echo $utlCert->ValidateCertificado(file_get_contents($rutaCert));
+// Out: Certificado emitido por el SAT.
+
+// Validate file primary key
+echo  $utlCert->ValidatePrivateKey(file_get_contents($rutaKey));
+// Out: Certificado emitido por el SAT.
 
 ```
 
@@ -64,9 +123,11 @@ and licensed for use under the MIT License (MIT). Please see [LICENSE][] for mor
 [downloads]: https://packagist.org/packages/rdomenzain/cfdi33-utils
 [git]: https://packagist.org/packages/rdomenzain
 [pagina]: https://ddsis.com.mx
+[issues]: https://github.com/rdomenzain/cfdi33-utils/issues
 
 [badge-source]: https://img.shields.io/badge/source-cfdi33--utils-blue?style=flat-square
 [badge-license]: https://img.shields.io/badge/licence-MIT-red?style=flat-square
-[badge-downloads]: https://img.shields.io/badge/downloads-%3E%20999-orange?style=flat-square
+[badge-downloads]: https://img.shields.io/github/downloads/rdomenzain/cfdi33-utils/total?style=flat-square
 [badge-git]: https://img.shields.io/github/followers/rdomenzain?label=rdomenzain&style=social
 [badge-pagina]: https://img.shields.io/badge/Web-DDsis-lightgrey?style=flat-square
+[badge-issues]: https://img.shields.io/github/issues/rdomenzain/cfdi33-utils?style=flat-square

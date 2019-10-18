@@ -2,7 +2,8 @@
 
 namespace rdomenzain\cfdi\utils\models\ecc11;
 
-class ConceptoEstadoDeCuentaCombustible {
+class ConceptoEstadoDeCuentaCombustible
+{
 
     public $Identificador;
     public $Fecha;
@@ -18,5 +19,4 @@ class ConceptoEstadoDeCuentaCombustible {
     public $Importe;
     /* @var $TrasladosECC TrasladosECC */
     public $TrasladosECC;
-
 }

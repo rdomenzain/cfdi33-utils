@@ -2,10 +2,10 @@
 
 namespace rdomenzain\cfdi\utils\models\ImpuestosLocales;
 
-class RetencionesLocales {
+class RetencionesLocales
+{
 
     public $ImpLocRetenido;
     public $TasadeRetencion;
     public $Importe;
-
 }

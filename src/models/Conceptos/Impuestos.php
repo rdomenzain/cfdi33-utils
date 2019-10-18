@@ -2,9 +2,10 @@
 
 namespace rdomenzain\cfdi\utils\models\Conceptos;
 
-class Impuestos {
+class Impuestos
+{
     /* @var $Traslados Traslados */
     public $Traslados;
-     /* @var $Retenciones Retenciones */
+    /* @var $Retenciones Retenciones */
     public $Retenciones;
 }

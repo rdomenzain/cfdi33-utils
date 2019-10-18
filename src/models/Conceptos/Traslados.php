@@ -2,8 +2,8 @@
 
 namespace rdomenzain\cfdi\utils\models\Conceptos;
 
-class Traslados {
+class Traslados
+{
     /* @var $Traslado Traslado */
     public $Traslado;
-
 }

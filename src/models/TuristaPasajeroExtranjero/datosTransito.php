@@ -2,7 +2,8 @@
 
 namespace rdomenzain\cfdi\utils\models\TuristaPasajeroExtranjero;
 
-class datosTransito {
+class datosTransito
+{
 
     public $Via;
     public $TipoId;
@@ -10,6 +11,4 @@ class datosTransito {
     public $Nacionalidad;
     public $EmpresaTransporte;
     public $IdTransporte;
-    
-
 }
