@@ -18,7 +18,7 @@ class NodeImpuestos
     public function GeneraNodo()
     {
         $impuestos = $this->impuestos;
-        if ($impuestos != null && count($impuestos) > 0) {
+        if ($impuestos != null) {
             // Agrega nodo Impuestos
             $elementImpuestos = $this->xmlRoot->createElement("cfdi:Impuestos");
             // Agrega atributo Total Impuestos Retenido
@@ -62,7 +62,7 @@ class NodeImpuestos
                 $elementImpuestos->appendChild($elementRetenciones);
             }
             // Agrega Nodo de Traslados
-            if ($impuestos->Traslados != null && count($impuestos->Traslados) > 0) {
+            if ($impuestos->Traslados != null && count($impuestos->Traslados->Traslado) > 0) {
                 $elementTraslados = $this->xmlRoot->createElement("cfdi:Traslados");
                 foreach ($impuestos->Traslados->Traslado as $tras) {
                     // Agrega nodos de retencion

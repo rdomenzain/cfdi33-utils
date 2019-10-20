@@ -1,6 +1,6 @@
 {
     "name": "rdomenzain/cfdi33-utils",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Utilerias para todo lo relacionado el CFDI 3.3. SAT México.",
     "keywords": ["cfdi", "mexico", "invoice", "pdf", "factura", "ddsis", "domenzain"],
     "homepage": "https://github.com/rdomenzain/cfdi33-utils",

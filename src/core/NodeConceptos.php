@@ -18,7 +18,7 @@ class NodeConceptos
 
     public function GeneraNodo()
     {
-        if ($this->conceptos != null && count($this->conceptos) > 0) {
+        if ($this->conceptos != null && count($this->conceptos->Concepto) > 0) {
             $conceptosElement = $this->xmlRoot->createElement("cfdi:Conceptos");
             foreach ($this->conceptos->Concepto as $concept) {
                 // Agrega Clave Prov Serv
@@ -98,12 +98,12 @@ class NodeConceptos
     {
         /* @var $Impuestos Impuestos */
         $Impuestos = $concepto->Impuestos;
-        if ($Impuestos != null && count($Impuestos) > 0) {
+        if ($Impuestos != null) {
             // Agrega nodo de Impuestos
             $impuestosElement = $this->xmlRoot->createElement("cfdi:Impuestos");
             // Agrega nodo si existe de traslados
             $Traslados = $Impuestos->Traslados;
-            if ($Traslados != null && count($Traslados) > 0) {
+            if ($Traslados != null) {
                 $trasladosElement = $this->xmlRoot->createElement("cfdi:Traslados");
                 foreach ($Traslados->Traslado as $oneTras) {
                     // Agrega nodo de traslado

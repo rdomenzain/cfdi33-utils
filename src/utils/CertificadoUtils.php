@@ -87,12 +87,15 @@ class CertificadoUtils
 
     private function ConvertNoSerie($dec)
     {
+        return pack('H*', str_replace(' ', '', str_replace('0x', '', $dec)));
+        /*
         $hex = $this->bcdechex($dec);
         $ser = "";
         for ($i = 1; $i < strlen($hex); $i = $i + 2) {
             $ser .= substr($hex, $i, 1);
         }
         return $ser;
+        */
     }
 
     private function bcdechex($dec)
@@ -112,5 +115,4 @@ class CertificadoUtils
             . chunk_split(base64_encode($file), 64, PHP_EOL)
             . '-----END CERTIFICATE-----' . PHP_EOL;
     }
-
 }
